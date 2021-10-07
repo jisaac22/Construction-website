@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ApolloClient, ApolloProvider } from '@apollo/client';
+import { BrowswerRouter as Router, Route } from 'react-router-dom';
+
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
+import Signup from './pages/Signup';
+import Workerlist from './pages/WorkerList'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
