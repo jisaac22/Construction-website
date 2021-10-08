@@ -1,10 +1,66 @@
 [
   {
-    "name": "Jacob Sierra",
-    "username": "jacob",
-    "email": "jacob@email.com",
+    "name": "Manny Lopez",
+    "username": "manny123",
+    "email": "manny@email.com",
     "password": "password01",
-    "skills": ["Carpentry"],
+    "skills": ["Carpentry", "Dry Wall", "Paint"],
     "phoneNumber": "0123456789"
+  },
+  {
+    "name": "Michael Garcia",
+    "username": "mike03",
+    "email": "mike@email.com",
+    "password": "password0123",
+    "skills": ["Dry Wall", "Paint"],
+    "phoneNumber": "1234567891"
+  },
+  {
+    "name": "John Martinez",
+    "username": "johnny54",
+    "email": "johnny@email.com",
+    "password": "password1234",
+    "skills": ["Dry Wall", "Paint"],
+    "phoneNumber": "2223334444"
+  },
+  {
+    "name": "Jose Chavez",
+    "username": "jchavez",
+    "email": "jose@email.com",
+    "password": "password01012",
+    "skills": ["Roofing"],
+    "phoneNumber": "1233215555"
+  },
+  {
+    "name": "Brian Harper",
+    "username": "brianH",
+    "email": "brian@email.com",
+    "password": "password010234",
+    "skills": ["Carpentry", "Roofing"],
+    "phoneNumber": "5553332222"
+  },
+  {
+    "name": "Steven Almazan",
+    "username": "stevie",
+    "email": "steve@email.com",
+    "password": "password010304",
+    "skills": ["Paint", "Roofing", "Flooring"],
+    "phoneNumber": "2223338888"
+  },
+  {
+    "name": "Jesse Rios",
+    "username": "jesseR",
+    "email": "jesse@email.com",
+    "password": "password010908",
+    "skills": ["Carpentry", "Flooring"],
+    "phoneNumber": "4443334444"
+  },
+  {
+    "name": "Raul Vela",
+    "username": "raulVela",
+    "email": "raul@email.com",
+    "password": "password010306",
+    "skills": ["Carpentry", "Paint", "Dry Wall"],
+    "phoneNumber": "9998882222"
   }
 ]
