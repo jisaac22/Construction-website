@@ -34,7 +34,8 @@ const workerSchema = new Schema({
   hourlyRate: {
     type: Number,
     required: true,
-    maxlength: 3
+    minlength: 1,
+    maxlength: 3,
   },
 });
 

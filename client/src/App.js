@@ -1,6 +1,6 @@
 import React from "react";
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
-import { BrowswerRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { setContext } from '@apollo/client/link/context';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -35,6 +35,12 @@ const client = new ApolloClient({
 
 function App() {
   return (
-
+    <ApolloProvider client={client}>
+      <Router>
+        <Home>
+        </Home>
+      </Router>
+    </ApolloProvider>
+  );
 }
 export default App;

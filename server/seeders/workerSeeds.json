@@ -5,7 +5,7 @@
     "password": "password01",
     "skills": ["Carpentry", "Dry Wall", "Paint"],
     "phoneNumber": "0123456789",
-    "hourlyRate": 20
+    "hourlyRate": "20"
   },
   {
     "name": "Michael Garcia",
@@ -13,7 +13,7 @@
     "password": "password0123",
     "skills": ["Dry Wall", "Paint"],
     "phoneNumber": "1234567891",
-    "hourlyRate": 15
+    "hourlyRate": "15"
   },
   {
     "name": "John Martinez",
@@ -21,7 +21,7 @@
     "password": "password1234",
     "skills": ["Dry Wall", "Paint"],
     "phoneNumber": "2223334444",
-    "hourlyRate": 18
+    "hourlyRate": "18"
   },
   {
     "name": "Jose Chavez",
@@ -29,7 +29,7 @@
     "password": "password01012",
     "skills": ["Roofing"],
     "phoneNumber": "1233215555",
-    "hourlyRate": 20
+    "hourlyRate": "20"
   },
   {
     "name": "Brian Harper",
@@ -37,7 +37,7 @@
     "password": "password010234",
     "skills": ["Carpentry", "Roofing"],
     "phoneNumber": "5553332222",
-    "hourlyRate": 23
+    "hourlyRate": "23"
   },
   {
     "name": "Steven Almazan",
@@ -45,7 +45,7 @@
     "password": "password010304",
     "skills": ["Paint", "Roofing", "Flooring"],
     "phoneNumber": "2223338888",
-    "hourlyRate": 25
+    "hourlyRate": "25"
   },
   {
     "name": "Jesse Rios",
@@ -53,7 +53,7 @@
     "password": "password010908",
     "skills": ["Carpentry", "Flooring"],
     "phoneNumber": "4443334444",
-    "hourlyRate": 18
+    "hourlyRate": "18"
   },
   {
     "name": "Raul Vela",
@@ -61,6 +61,6 @@
     "password": "password010306",
     "skills": ["Carpentry", "Paint", "Dry Wall"],
     "phoneNumber": "9998882222",
-    "hourlyRate": 19
+    "hourlyRate": "19"
   }
 ]
