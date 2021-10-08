@@ -8,12 +8,6 @@ const workerSchema = new Schema({
     unique: true,
     trim: true,
   },
-  username: {
-    type: String,
-    required: true,
-    unique: true,
-    trim: true,
-  },
   email: {
     type: String,
     required: true,
@@ -36,7 +30,12 @@ const workerSchema = new Schema({
     required: true,
     minlength: 10,
     maxlength: 10,
-  }
+  },
+  hourlyRate: {
+    type: Number,
+    required: true,
+    maxlength: 3
+  },
 });
 
 workerSchema.pre('save', async function (next) {

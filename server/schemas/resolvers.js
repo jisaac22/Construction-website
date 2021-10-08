@@ -19,8 +19,8 @@ const resolvers = {
   },
 
   Mutation: {
-    addWorker: async (parent, { name, username, password, email, skills, phoneNumber}) => {
-      return Worker.create({ name, username, password, email, skills, phoneNumber })
+    addWorker: async (parent, { name, password, email, skills, phoneNumber, hourlyRate}) => {
+      return Worker.create({ name, password, email, skills, phoneNumber, hourlyRate })
     },
     login: async (parent, { email, password }) => {
       const user = await Worker.findOne({ email });
