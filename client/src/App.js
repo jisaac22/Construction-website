@@ -6,9 +6,9 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
-import Workerlist from './pages/WorkerList'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import WorkerList from "./pages/WorkerList";
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -31,14 +31,32 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
+// const client = new ApolloClient({
+//   uri: '/graphql',
+//   cache: new InMemoryCache(),
+// })
 
 function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <Home>
-        </Home>
+        <Header />
+        <Route exact path="/">
+        <Home />
+        </Route>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/signup">
+          <Signup />
+        </Route>
+        <Route exact path="/workerlist">
+          <WorkerList />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
+        </Route>
+        <Footer />
       </Router>
     </ApolloProvider>
   );
