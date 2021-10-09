@@ -91,10 +91,10 @@ const WorkerList = () => {
                   {worker.name} <br />
                 </h4>
                 </Link>
-                <p className="workerEmail">Email: {worker.email}</p>
-                <p className="workerSkills">List of skills: {worker.skills}</p>
-                <p className="workerNumber">Ph# {worker.phoneNumber}</p>
-                <p className="workerRate">${worker.hourlyRate}</p>
+                <p className="worker">Email: {worker.email}</p>
+                <p className="worker">List of skills: {worker.skills}</p>
+                <p className="worker">Ph# {worker.phoneNumber}</p>
+                <p className="worker">${worker.hourlyRate}</p>
                 <button className="hireBtn">HIRE!</button>
               </div>
             </div>

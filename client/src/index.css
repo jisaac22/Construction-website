@@ -42,11 +42,11 @@ h1 {
   font-size: 25px;
 }
 .team {
-  margin-left: 38%;
+  margin-left: 35%;
   margin-top: 5%;
 }
 .hire {
-  font-size: 20px;
+  font-size: 30px;
   background-color:lightblue;
   text-decoration: none;
   padding: 20px;
@@ -55,7 +55,7 @@ h1 {
 }
 
 .join {
-  font-size: 20px;
+  font-size: 30px;
  margin-left: 30px;
  text-decoration: none;
  background-color:lightblue;
@@ -72,32 +72,20 @@ h1 {
   margin-left: 40%;
   border: solid black 2px;
   width: 20%;
-  height: 250px;
+  height: 330px;
   margin-top: 20px;
 }
 
  .workerName {
   font-weight: bold;
   text-align: center;
+  font-size: 30px;
  }
 
- .workerEmail {
+ .worker {
   font-weight: bold;
   margin-left: 8px;
-}
-
-.workerSkills {
-  font-weight: bold;
-  margin-left: 8px;
-}
-.workerNumber {
-  margin-left: 8px;
-  font-weight: bold;
-}
-
-.workerRate {
-  margin-left: 8px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .hireBtn {
