@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Manny Lopez",
+    "email": "manny@email.com",
+    "password": "password01",
+    "skills": ["Carpentry", "Dry Wall", "Paint"],
+    "phoneNumber": 23,
+    "hourlyRate": 20
+  },
+  {
+    "name": "Michael Garcia",
+    "email": "mike@email.com",
+    "password": "password0123",
+    "skills": ["Dry Wall", "Paint"],
+    "phoneNumber": 20,
+    "hourlyRate": 15
+  },
+  {
+    "name": "John Martinez",
+    "email": "johnny@email.com",
+    "password": "password1234",
+    "skills": ["Dry Wall", "Paint"],
+    "phoneNumber": 45,
+    "hourlyRate": 18
+  },
+  {
+    "name": "Jose Chavez",
+    "email": "jose@email.com",
+    "password": "password01012",
+    "skills": ["Roofing"],
+    "phoneNumber": 22,
+    "hourlyRate": 10
+  },
+  {
+    "name": "Brian Harper",
+    "email": "brian@email.com",
+    "password": "password010234",
+    "skills": ["Carpentry", "Roofing"],
+    "phoneNumber": 111,
+    "hourlyRate": 15
+  },
+  {
+    "name": "Steven Almazan",
+    "email": "steve@email.com",
+    "password": "password010304",
+    "skills": ["Paint", "Roofing", "Flooring"],
+    "phoneNumber": 23,
+    "hourlyRate": 11
+  },
+  {
+    "name": "Jesse Rios",
+    "email": "jesse@email.com",
+    "password": "password010908",
+    "skills": ["Carpentry", "Flooring"],
+    "phoneNumber": 44,
+    "hourlyRate": 18
+  },
+  {
+    "name": "Raul Vela",
+    "email": "raul@email.com",
+    "password": "password010306",
+    "skills": ["Carpentry", "Paint", "Dry Wall"],
+    "phoneNumber": 22,
+    "hourlyRate": 10
+  },
+  {
+    "name": "Raul Vela2",
+    "email": "raul22@email.com",
+    "password": "password010306",
+    "skills": ["Carpentry", "Paint", "Dry Wall"],
+    "phoneNumber": 22,
+    "hourlyRate": 10
+  }
+]
