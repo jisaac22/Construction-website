@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
@@ -24,13 +22,11 @@ const SingleWorker = () => {
     </div>;
   }
   return (
-    <div className="my-3">
-      <h3>{worker[0].name}</h3>
-      <h3>{worker[0].email}</h3>
-      <h3>{worker[0].skills}</h3>
-      <h3>{worker[0].phoneNumber}</h3>
-      <h3>{worker[0].houryRate}</h3>
-      <h3>{worker[0]._id}</h3>
+    <div className="singleWorker">
+      <h3>Name: {worker[0].name}</h3>
+      <h3>Contact Info: {worker[0].email} , {worker[0].phoneNumber}</h3>
+      <h3>Skills: {worker[0].skills}</h3>
+      <h3>Cost $:{worker[0].hourlyRate}</h3>
       <div className="bg-light py-4">
       </div>
     </div>
