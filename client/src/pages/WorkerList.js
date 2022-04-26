@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { QUERY_WORKERS } from '../utils/queries';
+import avatar1 from '../avatars/avatar1.jpg'
 
 
 const WorkerList = () => {
@@ -16,26 +17,18 @@ const WorkerList = () => {
   }
 
   return (
-    <div>
-      <div className="workerContainer">
-        {workers &&
-          workers.map((worker) => (
-            <div key={worker._id} className="col-12 col-xl-6">
-              <div className="cardContainer">
-                <Link to="/profile">
+    <div className='workContainer'>
+       {workers.map((worker) => (
+            <div key={worker._id} className="cardContainer">
+              <Link className="workerName" to={{ pathname: `/profile/${worker._id}` }}>
                 <h4 className="workerName">
                   {worker.name} <br />
                 </h4>
-                </Link>
-                <p className="worker">Email: {worker.email}</p>
-                <p className="worker">List of skills: {worker.skills}</p>
-                <p className="worker">Ph# {worker.phoneNumber}</p>
-                <p className="worker">${worker.hourlyRate}</p>
-                <button className="hireBtn">HIRE!</button>
+              </Link>
+              <img className='avatar' src={avatar1}></img>
+              <p className="worker">List of skills: {worker.skills[0]}, {worker.skills[1]}</p>
               </div>
-            </div>
-          ))}
-      </div>
+        ))}
     </div>
   );
 };

@@ -14,8 +14,8 @@ export const QUERY_WORKERS = gql`
 `;
 
 export const QUERY_SINGLE_WORKER = gql`
-  query singleWorker($workerId: ID!) {
-    workers (workerId: $workerId){
+  query singleWorker($_id: String) {
+    singleWorker(_id: $_id){
       _id
       name
       email

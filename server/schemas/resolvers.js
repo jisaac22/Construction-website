@@ -7,8 +7,9 @@ const resolvers = {
     workers: async () => {
       return Worker.find()
     },
-    user: async (parent, {workerId}) => {
-      return Worker.findOne({_id: workerId})
+    singleWorker: async (parent, {_id}) => {
+      const params = _id ? { _id } : {};
+      return Worker.find({_id: _id})
     },
     me: async (parent, args, context) => {
       if (context.user) {

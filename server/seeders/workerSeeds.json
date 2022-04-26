@@ -62,5 +62,13 @@
     "skills": ["Carpentry", "Paint", "Dry Wall"],
     "phoneNumber": 22,
     "hourlyRate": 10
+  },
+  {
+    "name": "Raul Vela2",
+    "email": "raul22@email.com",
+    "password": "password010306",
+    "skills": ["Carpentry", "Paint", "Dry Wall"],
+    "phoneNumber": 22,
+    "hourlyRate": 10
   }
 ]

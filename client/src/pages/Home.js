@@ -6,8 +6,8 @@ import { QUERY_WORKERS } from '../utils/queries';
 
 const Home = () => {
   return (
-    <main>
-      <div className="about">
+    <div className='container2'>
+      <div className="info">
         <p>If you are looking for someone to come and make quick fixes around the house you've come to the right spot. If 
           you are a construction worker trying to put your name out there and get new jobs, this is the place for you. If you 
           are looking for someone to hire click the 'Looking to hire' button and you'll be presented with a list of workers.
@@ -15,14 +15,14 @@ const Home = () => {
         </p>
       </div>
       <div className="team">
-      <Link className="hire" to="/workerlist">
+      <Link className="hire btn" to="/workerlist">
         Looking to Hire?
        </Link>
-      <Link className="join" to="/signup">
+      <Link className="part btn" to="/signup">
         Become part of the team?
       </Link>
      </div> 
-    </main>
+    </div>
   )
 }
 

@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
@@ -8,37 +6,33 @@ import { useQuery } from '@apollo/client';
 import { QUERY_SINGLE_WORKER } from '../utils/queries';
 
 const SingleWorker = () => {
-  // Use `useParams()` to retrieve value of the route parameter `:profileId`
-  const { workerId } = useParams();
+  let { id } = useParams();
 
   const { loading, data } = useQuery(QUERY_SINGLE_WORKER, {
-    // pass URL parameter
-    variables: { workerId: workerId },
+
+    variables: { _id: id },
   });
 
-  const worker = data?.worker || {};
+  const worker = data?.singleWorker || [];
+  console.log(worker)
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>
+      <h2>HI</h2>
+    </div>;
   }
   return (
-    <div className="my-3">
-      <h3 className="card-header bg-dark text-light p-2 m-0">
-        {worker.name} <br />
-
-      </h3>
-      <div className="bg-light py-4">
-        <blockquote
-          className="p-4"
-          style={{
-            fontSize: '1.5rem',
-            fontStyle: 'italic',
-            border: '2px dotted #1a1a1a',
-            lineHeight: '1.5',
-          }}
-        >
-        </blockquote>
-      </div>
+    <div className="singleWorker">
+      <h3>Name</h3>
+      <p>{worker[0].name}</p>
+      <h3>Contact Info</h3>
+      <p>Email: {worker[0].email}</p>
+      <p>Phone: #{worker[0].phoneNumber}</p>
+      <h3>Skills</h3>
+      <p>{worker[0].skills[0]}, {worker[0].skills[1]}, {worker[0].skills[2]} </p>
+      <h3>Cost</h3>
+      <p>$:{worker[0].hourlyRate}</p>
+      <button className='hireBtn'>HIRE</button>
     </div>
   );
 };
