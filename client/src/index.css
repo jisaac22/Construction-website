@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  display: block;
+}
 header {
   background-color:rgb(89, 180, 241);
   margin: 0px;
@@ -13,6 +17,7 @@ h1 {
 
 .title{
   text-decoration: none;
+  
 }
 
 .title:hover{
@@ -26,6 +31,7 @@ h1 {
 .pHeader {
   margin-left: 30%;
   font-size: 40px;
+
 }
 
 .loginBtn {
@@ -42,7 +48,8 @@ h1 {
 }
 
 .team {
-  display: flex;
+justify-items: center;
+align-content: center;
   
 }
 
@@ -155,7 +162,7 @@ footer {
 
 }
 .container2 {
-  border: 10px red solid;
+
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -167,12 +174,21 @@ footer {
   height: 150px;
   width: 150px;
 }
-
+.profileBody {
+  background-image: url('./photos/profileBackground.jpg')
+}
 .singleWorker{
+
+  background-color: white;
   text-align: center;
   border: 2px black solid;
+  width: 25%;
+  margin-left: 40%;
+  font-size: 30px;
 }
 
 .singleWorker h3{
   text-decoration: underline;
 }
+
+

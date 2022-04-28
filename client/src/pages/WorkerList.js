@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { QUERY_WORKERS } from '../utils/queries';
-import avatar1 from '../avatars/avatar1.jpg'
+import avatar1 from '../photos/avatar1.jpg'
 
 
 const WorkerList = () => {

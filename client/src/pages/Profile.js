@@ -22,6 +22,7 @@ const SingleWorker = () => {
     </div>;
   }
   return (
+  <div className='profileBody'> 
     <div className="singleWorker">
       <h3>Name</h3>
       <p>{worker[0].name}</p>
@@ -34,6 +35,7 @@ const SingleWorker = () => {
       <p>$:{worker[0].hourlyRate}</p>
       <button className='hireBtn'>HIRE</button>
     </div>
+  </div> 
   );
 };
 

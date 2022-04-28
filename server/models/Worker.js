@@ -37,6 +37,10 @@ const workerSchema = new Schema({
     minlength: 1,
     maxlength: 3,
   },
+  notifications: {
+    type: Number,
+    default: 0
+  }
 });
 
 workerSchema.pre('save', async function (next) {
